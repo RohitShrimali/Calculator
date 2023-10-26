@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator-Rohit_Shrimali</title>
+</head>
+<body>
+    <body div class="bg-primary">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+            <h1  style="font-family:'Courier New', Courier, monospace; font-size: 80px;"><b><u>CALCULATOR</u></b></h1>
+            </div>
+        </div>
+        
+        <div id="containe">
+            <div class="d-flex justify-content-center">
+             <span class="border-20 border-warning">  
+                 <table border="1" cellspacing="2">
+                <tr>
+                     <td colspan="4" ><input type="text" id="t1" class="bg-info" value="0"></td>
+                     
+                </tr>
+                <tr>
+                    <td colspan="3"> <button type="button" class="btn btn-outline-light btn btn-warning" onclick="clr()">AC</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-secondary"  onclick="operator(this)">/ </button></td>   
+                </tr>
+                <tr>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary"  onclick="num(this)">1</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary" onclick="num(this)">2</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary" onclick="num(this)">3</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-secondary" onclick="operator(this)">+</button></td>
+                </tr>
+                <tr>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary" onclick="num(this)">4</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary" onclick="num(this)">5</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary" onclick="num(this)">6</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-secondary"  onclick="operator(this)">-</button></td>
+                </tr>
+                <tr>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary" onclick="num(this)">7</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary" onclick="num(this)">8</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-primary" onclick="num(this)">9</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-secondary"  onclick="operator(this)">*</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <button type="button" class="btn btn-outline-light btn btn-secondary" onclick="num(this)">0</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-secondary"  onclick="operator(this)">.</button></td>
+                    <td> <button type="button" class="btn btn-outline-light btn btn-secondary" onclick="equal()">=</button></td>
+                </tr>
+            </table></span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
